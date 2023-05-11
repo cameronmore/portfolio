@@ -1,0 +1,1081 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle/"
+     xml:base="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:ZebraPuzzle="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Characterizes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Characterizes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasColor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drinks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drinks">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsInTheSameHouse"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsDrunkBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drink"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsDrunkBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsDrunkBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsInTheSameHouse"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drink"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsInTheSameHouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsInTheSameHouse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsOwnedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsOwnedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsInTheSameHouse"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Owns"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#LivesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#LivesIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsInTheSameHouse"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasOccupant"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#NextTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#NextTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Owns">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsInTheSameHouse"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#SmokedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#SmokedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsInTheSameHouse"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Smokes"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Cigarettes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Smokes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Smokes">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsInTheSameHouse"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Cigarettes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ToTheLeftOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ToTheLeftOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#NextTo"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ToTheRightOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ToTheRightOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ToTheRightOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#NextTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasColor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasOccupant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasOccupant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsInTheSameHouse"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Cigarettes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Cigarettes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#chesterfields"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#kools"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#lucky_strike"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#old_gold"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#parliments"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drink"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#blue"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#green"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ivory"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#red"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#yellow"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drink"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drink">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#coffee"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#milk"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#orange_juice"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#tea"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#water"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_1"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_2"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_3"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_4"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_5"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#englishman"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#japanese"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#norwegian"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#spaniard"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ukrainian"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#dog"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#fox"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#horse"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#snails"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#zebra"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ZebraOwner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ZebraOwner">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Owns"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#zebra"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#blue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#blue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#green"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ivory"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#red"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#yellow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#chesterfields -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#chesterfields">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Cigarettes"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#SmokedBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#LivesIn"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#NextTo"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasOccupant"/>
+                                                                <owl:someValuesFrom>
+                                                                    <owl:Class>
+                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Owns"/>
+                                                                                <owl:hasValue rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#fox"/>
+                                                                            </owl:Restriction>
+                                                                        </owl:intersectionOf>
+                                                                    </owl:Class>
+                                                                </owl:someValuesFrom>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#kools"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#lucky_strike"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#old_gold"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#parliments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#coffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#coffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drink"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#milk"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#orange_juice"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#tea"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#dog -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#dog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#fox"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#horse"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#snails"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#zebra"/>
+        <ZebraPuzzle:IsOwnedBy rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#spaniard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#englishman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#englishman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#LivesIn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasColor"/>
+                                <owl:hasValue rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#red"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#LivesIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#fox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#fox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#horse"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#snails"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#zebra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ToTheRightOf"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasColor"/>
+                                <owl:hasValue rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ivory"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ivory"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#red"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#yellow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#horse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#horse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#snails"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#zebra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ToTheRightOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasColor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_2"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_3"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_4"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_5"/>
+        <ZebraPuzzle:ToTheLeftOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasColor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_3"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_4"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_5"/>
+        <ZebraPuzzle:ToTheLeftOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_3"/>
+        <ZebraPuzzle:ToTheRightOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasColor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_4"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_5"/>
+        <ZebraPuzzle:ToTheLeftOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_4"/>
+        <ZebraPuzzle:ToTheRightOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasColor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_5"/>
+        <ZebraPuzzle:ToTheLeftOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_5"/>
+        <ZebraPuzzle:ToTheRightOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ToTheLeftOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasColor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+            </owl:Restriction>
+        </rdf:type>
+        <ZebraPuzzle:ToTheRightOf rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ivory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ivory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#red"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#yellow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#japanese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#japanese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#LivesIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#kools -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#kools">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Cigarettes"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#lucky_strike"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#old_gold"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#parliments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#lucky_strike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#lucky_strike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Cigarettes"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#old_gold"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#parliments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#milk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drink"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsDrunkBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#LivesIn"/>
+                                <owl:hasValue rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_3"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#orange_juice"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#tea"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#norwegian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#norwegian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#NextTo"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#hasColor"/>
+                                <owl:hasValue rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#blue"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#LivesIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#old_gold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#old_gold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Cigarettes"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#SmokedBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Owns"/>
+                                <owl:hasValue rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#snails"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#parliments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#orange_juice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#orange_juice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drink"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsDrunkBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Smokes"/>
+                                <owl:hasValue rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#lucky_strike"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#tea"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#parliments -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#parliments">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Cigarettes"/>
+        <ZebraPuzzle:SmokedBy rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#japanese"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#yellow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#snails -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#snails">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#IsOwnedBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Smokes"/>
+                                <owl:hasValue rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#old_gold"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#zebra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#spaniard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#spaniard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#LivesIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+            </owl:Restriction>
+        </rdf:type>
+        <ZebraPuzzle:Owns rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#dog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drink"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#water"/>
+        <ZebraPuzzle:IsDrunkBy rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ukrainian"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ukrainian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ukrainian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Occupant"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#LivesIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#House"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Drink"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#yellow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#yellow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#zebra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#zebra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#Pet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#blue"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#chesterfields"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#coffee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#dog"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#englishman"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#fox"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#green"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#horse"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#house_5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ivory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#japanese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#kools"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#lucky_strike"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#milk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#norwegian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#old_gold"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#orange_juice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#parliments"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#red"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#snails"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#spaniard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#tea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ukrainian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#water"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#yellow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#zebra"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#englishman"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#japanese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#norwegian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#spaniard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/camer/ontologies/2023/4/ZebraPuzzle#ukrainian"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
