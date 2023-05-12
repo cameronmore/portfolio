@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 I am an ontology developer and recently graduated from the University at Buffalo, where I studied the philosophy of applied ontology with Dr. Barry Smith and Dr. John Beverly.
 
