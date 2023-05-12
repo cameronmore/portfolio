@@ -27,6 +27,6 @@ The Zebra Puzzle is a logical puzzle, supposedly invented by Albert Einstein. Fr
 14. The Norwegian lives next to the Blue house.
 ```
 
-### 2. Unconscious Extension of the Mental Fnctioning Ontology
+### 2. Unconscious Extension of the Mental Functioning Ontology
 
 I have attached a copy of a paper that outlines the current goals and deliverables that an unconscious extension of the mental functioning ontology can achieve.
