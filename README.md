@@ -1,19 +1,16 @@
 # portfolio
+
 I am an ontology developer and recently graduated from the University at Buffalo, where I studied the philosophy of applied ontology with Dr. Barry Smith and Dr. John Beverly.
-On this page you can find projects I have built to demonstrate my skills with Python, Protege, and other data/ontology development tools.
 
+## Navigating This GitHub
 
+In this repository, you can find projects I have built to demonstrate my skills with Python, Protege, and other data/ontology development tools. My other repositories include my work on the STEM Identity Ontology (STEMIO), the Mental Functioning Ontology (MFO), and an Unconscious Extension of MFO. Below, I describe the files that can be found in this personal portfolio.
 
+### 1. Zebra Puzzle
 
+The Zebra Puzzle is a logical puzzle, supposedly invented by Albert Einstein. From a series of clues, one is able to infer the location of a zebra among five distinctly colored houses. Each house has its own occupant, pet, cigarette brand, and drink. To solve the puzzle, I built an ontology that describes the classes of things (occupants, houses, colors, etc), and asserted the relationships between the classes (all occupants occupy houses) and the particular relations (the clues below). By running a reasoner on the ontology, we can infer the location of the zebra. The Owl file can be found in this repo. I have listed the clues below:
 
-
-
-
-
-
-ZEBRA PUZZLE:
-The 'Zebra Puzzle' is a logical puzzle supposedly created by Albert Einstein. The set-up is that within each of five houses is an occupant who smokes a particular brand of cigatettes, drinks a particular drink, and owns a particular pet. Based off a list of clues, you can infer where the 'zebra' is located among five houses, even though it is never mentioned in the clues.
-The clues are:
+```
 1. The Englishman lives in the Red house.
 2. The Spaniard owns the Dog.
 3. Coffee is drunk in the Green house.
@@ -28,8 +25,8 @@ The clues are:
 12. The Lucky Strike smoker drinks Orange juice.
 13. The Japanese smokes Parliaments.
 14. The Norwegian lives next to the Blue house.
-By describing the relations in an ontology, we can infer where the zebra must be, and a work-in-rogress Owl file can be found in this repository attempting to do that.
+```
 
+### 2. Unconscious Extension of the Mental Fnctioning Ontology
 
-
-
+I have attached a copy of a paper that outlines the current goals and deliverables that an unconscious extension of the mental functioning ontology can achieve.
