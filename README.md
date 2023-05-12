@@ -2,6 +2,13 @@
 I am an ontology developer and recently graduated from the University at Buffalo, where I studied the philosophy of applied ontology with Dr. Barry Smith and Dr. John Beverly.
 On this page you can find projects I have built to demonstrate my skills with Python, Protege, and other data/ontology development tools.
 
+
+
+
+
+
+
+
 ZEBRA PUZZLE:
 The 'Zebra Puzzle' is a logical puzzle supposedly created by Albert Einstein. The set-up is that within each of five houses is an occupant who smokes a particular brand of cigatettes, drinks a particular drink, and owns a particular pet. Based off a list of clues, you can infer where the 'zebra' is located among five houses, even though it is never mentioned in the clues.
 The clues are:
