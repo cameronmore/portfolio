@@ -31,6 +31,11 @@ The Zebra Puzzle is a logical puzzle, supposedly invented by Albert Einstein. Fr
 
 I have attached a copy of a paper that outlines the current goals and deliverables that an unconscious extension of the mental functioning ontology can achieve.
 
+### 3. Soccer Visualization
+
+As a part of a UDemy course I am taking to learn Python, I did some simple visualization of data from the soccer video game Fifa. I found the most undervalues player by taking the players' value and subtracting it from their wages, which involved turning those two columns into integers. I then plotted it on a graph. I have attached the dataset in this portfolio.
+
+
 ### 3. Wyrdl!
 
 I wrote a simple Python Wordle knock-off.
