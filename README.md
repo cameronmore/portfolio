@@ -4,9 +4,11 @@ Welcome to my portfolio! I am an ontology developer and recently received a Mast
 
 In this repository, you can find projects I have built to demonstrate my skills with Python, Protege, and other data/ontology development tools. My other repositories include my work on the STEM Identity Ontology (STEMIO), the Mental Functioning Ontology (MFO), and an Unconscious Extension of MFO. Below, I describe the files that can be found in this personal portfolio.
 
+Currently I'm learning how to integrate machine learning models with ontologies to allow the mass organization/integration of data. The first step is to become familiar with PyTorch, so stay tuned for some files coming soon!
+
 ## File Guide
 
-### 1. Zebra Puzzle (Protege)
+### 1. Zebra Puzzle (Protege and Owl)
 
 The Zebra Puzzle is a logical puzzle, supposedly invented by Albert Einstein. From a series of clues, one is able to infer the location of a zebra among five distinctly colored houses. Each house has its own occupant, pet, cigarette brand, and drink. To solve the puzzle, I built an ontology that describes the classes of things (occupants, houses, colors, etc), and asserted the relationships between the classes (all occupants occupy houses) and the particular relations (the clues below). By running a reasoner on the ontology, we can infer the location of the zebra. The Owl file can be found in this repo. I have listed the clues below:
 
@@ -35,7 +37,7 @@ I have attached a copy of a paper that outlines the current goals and deliverabl
 
 As a part of a UDemy course I am taking to learn Python, I did some simple visualization of data from the soccer video game Fifa. I found the most undervalues player by taking the players' value and subtracting it from their wages, which involved turning those two columns into integers. I then plotted it on a graph. I have attached the dataset in this portfolio.
 
-### 4. Iris Machine Learning (Python Machine Learning)
+### 4. Iris Machine Learning (Simple SciKit-learn Algorithm)
 
 Another project I did for the UDemy course was building a small machine learning model which predicts which species of iris flower a given imput is. This was Python based, and I plan to create more machine learning models in the future.
 
