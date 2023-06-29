@@ -1,0 +1,151 @@
+id,age,sex,number_of_dreams_per_week,number_of_nightmares_per_week,age_of_oedipal_trauma,marital_status,parental_divorce_status,primary_defense_mechanism,attachment_style,level_of_neurosis,number_of_freudian_slips_per_analytic_session,level_of_perceived_death_drive,number_of_physical_symptoms,type_of_physical_symptoms,level_of_addictive_tendency
+1,25,male,3,2,16,single,no,projection,secure,7,1,4,headache,2
+2,32,female,5,3,18,married,yes,denial,avoidant,8,2,6,back pain,3
+3,45,male,1,0,14,divorced,yes,reaction formation,anxious,6,3,8,stomachache,1
+4,57,female,2,1,12,widowed,no,intellectualization,secure,9,4,2,dizziness,5
+5,69,male,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+6,73,female,3,2,18,married,no,projection,ambivalent,7,2,4,headache,3
+7,82,male,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+8,91,female,1,0,14,divorced,no,reaction formation,secure,6,3,8,stomachache,1
+9,35,male,2,1,12,widowed,yes,intellectualization,anxious,9,4,2,dizziness,5
+10,34,female,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+11,43,male,3,2,18,married,no,projection,secure,7,2,4,headache,3
+12,19,female,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+13,52,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+14,25,male,3,2,16,single,no,projection,avoidant,8,1,4,headache,2
+15,31,female,5,3,18,married,yes,denial,secure,7,2,6,back pain,3
+16,36,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+17,60,female,2,1,12,widowed,yes,intellectualization,ambivalent,9,4,2,dizziness,5
+18,56,male,4,2,10,single,no,displacement,secure,5,5,1,nausea,4
+19,81,female,3,2,18,married,no,projection,anxious,7,2,4,headache,3
+20,22,female,1,0,14,divorced,no,reaction formation,secure,8,1,3,headache,2
+21,28,female,2,1,16,single,yes,isolation,ambivalent,7,2,5,back pain,3
+22,31,male,4,2,10,married,no,displacement,secure,5,5,1,nausea,4
+23,38,female,3,2,18,widowed,no,projection,anxious,7,2,4,headache,3
+24,22,male,1,0,14,divorced,no,reaction formation,secure,8,1,3,headache,2
+25,27,female,2,1,12,married,yes,intellectualization,ambivalent,9,4,2,dizziness,5
+26,29,male,4,2,10,single,no,displacement,secure,5,5,1,nausea,4
+27,39,female,3,2,18,widowed,no,projection,anxious,7,2,4,headache,3
+28,35,male,1,0,14,divorced,no,reaction formation,secure,8,1,3,headache,2
+29,32,female,2,1,12,married,yes,intellectualization,ambivalent,9,4,2,dizziness,5
+30,51,male,4,2,10,single,no,displacement,secure,5,5,1,nausea,4
+31,55,female,3,2,18,widowed,no,projection,anxious,7,2,4,headache,3
+32,46,male,1,0,14,divorced,no,reaction formation,secure,8,1,3,headache,2
+33,49,female,2,1,12,married,yes,intellectualization,ambivalent,9,4,2,dizziness,5
+34,48,male,4,2,10,single,no,displacement,secure,5,5,1,nausea,4
+35,329,female,3,2,18,widowed,no,projection,anxious,7,2,4,headache,3
+36,338,male,1,0,14,divorced,no,reaction formation,secure,8,1,3,headache,2
+37,347,female,2,1,12,married,yes,intellectualization,ambivalent,9,4,2,dizziness,5
+38,356,male,4,2,10,single,no,displacement,secure,5,5,1,nausea,4
+39,365,female,3,2,18,widowed,no,projection,anxious,7,2,4,headache,3
+40,374,male,1,0,14,divorced,no,reaction formation,secure,8,1,3,headache,2
+41,383,female,2,1,12,married,yes,intellectualization,ambivalent,9,4,2,dizziness,5
+42,392,male,4,2,10,single,no,displacement,secure,5,5,1,nausea,4
+43,401,female,3,2,18,widowed,no,projection,anxious,7,2,4,headache,3
+44,410,male,1,0,14,divorced,no,reaction formation,secure,8,1,3,headache,2
+45,419,female,2,1,12,married,yes,intellectualization,ambivalent,9,4,2,dizziness,5
+46,428,male,4,2,10,single,no,displacement,secure,5,5,1,nausea,4
+47,437,female,3,2,18,widowed,no,projection,anxious,7,2,4,headache,3
+48,446,male,1,0,14,divorced,no,reaction formation,secure,8,1,3,headache,2
+49,455,female,2,1,12,married,yes,intellectualization,ambivalent,9,4,2,dizziness,5
+50,464,male,4,2,10,single,no,displacement,secure,5,5,1,nausea,4
+51,473,female,3,2,18,widowed,no,projection,anxious,7,2,4,headache,3
+52,482,male,1,0,14,divorced,no,reaction formation,secure,8,1,3,headache,2
+53,491,female,2,1,12,married,yes,intellectualization,ambivalent,9,4,2,dizziness,5
+54,499,male,4,2,10,single,no,displacement,secure,5,5,1,nausea,4
+55,506,female,2,1,18,single,no,projection,ambivalent,7,2,4,headache,3
+56,513,male,5,3,16,married,yes,denial,avoidant,8,1,6,back pain,2
+57,520,female,1,0,14,divorced,no,reaction formation,secure,6,3,8,stomachache,1
+58,527,male,2,1,12,widowed,yes,intellectualization,anxious,9,4,2,dizziness,5
+59,534,female,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+60,541,male,3,2,18,married,no,projection,secure,7,2,4,headache,3
+61,548,female,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+62,555,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+63,562,female,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+64,569,male,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+65,576,female,3,2,18,married,no,projection,secure,7,2,4,headache,3
+66,583,male,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+67,590,female,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+68,597,male,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+69,604,female,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+70,611,male,3,2,18,married,no,projection,secure,7,2,4,headache,3
+71,618,female,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+72,625,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+73,632,female,2,1,12,widowed,no,intellectualization,avoidant,9,4,2,dizziness,5
+74,639,male,4,2,10,single,no,displacement,secure,5,5,1,nausea,4
+75,646,female,3,2,18,married,no,projection,secure,7,2,4,headache,3
+76,653,male,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+77,660,female,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+78,667,male,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+79,674,female,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+80,681,male,3,2,18,married,no,projection,secure,7,2,4,headache,3
+81,688,female,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+82,695,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+83,702,female,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+84,709,male,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+85,716,female,3,2,18,married,no,projection,secure,7,2,4,headache,3
+86,723,male,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+87,730,female,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+88,737,male,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+89,744,female,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+90,751,male,3,2,18,married,no,projection,secure,7,2,4,headache,3
+91,758,female,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+92,765,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+93,772,female,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+94,779,male,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+95,786,female,3,2,18,married,no,projection,secure,7,2,4,headache,3
+96,793,male,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+97,800,female,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+98,807,male,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+99,814,female,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+100,821,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+101,828,female,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+102,835,male,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+103,842,female,3,2,18,married,no,projection,secure,7,2,4,headache,3
+104,849,male,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+105,856,female,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+106,863,male,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+107,870,female,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+108,877,male,3,2,18,married,no,projection,secure,7,2,4,headache,3
+109,884,female,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+110,891,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+111,898,female,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+112,905,male,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+113,912,female,3,2,18,married,no,projection,secure,7,2,4,headache,3
+114,919,male,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+115,926,female,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+116,933,male,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+117,940,female,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+118,947,male,3,2,18,married,no,projection,secure,7,2,4,headache,3
+119,954,female,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+120,961,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+121,968,female,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+122,975,male,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+123,982,female,3,2,18,married,no,projection,secure,7,2,4,headache,3
+124,989,male,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+125,996,female,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+126,1003,male,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+127,1010,female,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+128,1017,male,3,2,18,married,no,projection,secure,7,2,4,headache,3
+129,1024,female,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+130,1031,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+131,1038,female,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+132,1045,male,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+133,1052,female,3,2,18,married,no,projection,secure,7,2,4,headache,3
+134,1059,male,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+135,1031,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+136,1038,female,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+137,1045,male,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+138,1052,female,3,2,18,married,no,projection,secure,7,2,4,headache,3
+139,1059,male,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+140,1066,female,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+141,1073,male,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+142,1080,female,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+143,1087,male,3,2,18,married,no,projection,secure,7,2,4,headache,3
+144,1094,female,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+145,1101,male,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
+146,1108,female,2,1,12,widowed,yes,intellectualization,secure,9,4,2,dizziness,5
+147,1115,male,4,2,10,single,no,displacement,ambivalent,5,5,1,nausea,4
+148,1122,female,3,2,18,married,no,projection,secure,7,2,4,headache,3
+149,1129,male,5,3,16,single,yes,denial,avoidant,8,1,6,back pain,2
+150,1136,female,1,0,14,divorced,no,reaction formation,anxious,6,3,8,stomachache,1
