@@ -1,4 +1,4 @@
-id,age,sex,number_of_dreams_per_week,number_of_nightmares_per_week,age_of_oedipal_trauma,marital_status,parental_divorce_status,primary_defense_mechanism,attachment_style,level_of_neurosis,number_of_freudian_slips_per_analytic_session,level_of_perceived_death_drive,number_of_physical_symptoms,type_of_physical_symptoms,level_of_addictive_tendency
+id,age,sex,number_of_dreams_per_week,number_of_nightmares_per_week,age_of_oedipal_trauma,marital_status,parental_divorce_status,primary_defense_mechanism,attachment_style,level_of_neurosis,number_of_freudian_slips_per_analytic_session,level_of_perceived_death_drive,type_of_physical_symptoms,number_of_physical_symptoms
 1,25,male,3,2,16,single,no,projection,secure,7,1,4,headache,2
 2,32,female,5,3,18,married,yes,denial,avoidant,8,2,6,back pain,3
 3,45,male,1,0,14,divorced,yes,reaction formation,anxious,6,3,8,stomachache,1
