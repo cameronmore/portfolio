@@ -90,34 +90,27 @@ for symptom in total_symptom_list:
 print(freq_of_symp_master)
 
 #Let's compare the rates of these symptoms in nightmare patients and our entire set
+def calculate_percentages(dictionary):
+    total_occurrences = sum(dictionary.values())
+    percentages = {}
 
-'''
+    for item, occurrences in dictionary.items():
+        percentage = (occurrences / total_occurrences) * 100
+        percentages[item] = percentage
 
-I don't want to find the rate of each item in a given dictionary separately,
-I want to iterate through the dictionary and return a new dictionary with the values as percentages
+    return percentages
 
-I know thatthis code works:
-def get_symptom_percentage(dictionary, item):
-         return (dictionary[item] * 1.0 / sum(dictionary.values()))*100
+nightmare_percentages = calculate_percentages(freq_of_symp_in_nightmare)
+master_percentages = calculate_percentages(freq_of_symp_master)
 
-Can I use that function to iterate through a dictionary?
+#Nightmare patients suffer from higher rates of...
+def dict_diff(dict1, dict2):
+    result = {}
+    for key in dict1.keys():
+        if key in dict2:
+            result[key] = dict1[key] - dict2[key]
+    return result
 
-def get_symptom_rates(dictionary):
-   for item in dictionary.items():
-      def get_symptom_percentage(dictionary, item):
-         return (dictionary[symptom] * 1.0 / sum(dictionary.values()))*100
-      get_symptom_percentage(dictionary, item)
+print(dict_diff(nightmare_percentages,master_percentages))
 
-
-get_symptom_rates(freq_of_symp_in_nightmare)
-
-Or should I totally scratch that and just create a new function that iterates through the dictionary and returns the rate of the values
-
-Could I do this:
-def rates_of_values(dictionary):
-   for k, v in dictionary:
-      d={}
-      d[k] = dictionary[v] * 1.0 / sum(dictionary.values())
-
-'''
-
+#Nightmare patients suffer from higher rates of headaches and stomachaches
