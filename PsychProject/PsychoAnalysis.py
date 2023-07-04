@@ -93,17 +93,15 @@ print(freq_of_symp_master)
 def calculate_percentages(dictionary):
     total_occurrences = sum(dictionary.values())
     percentages = {}
-
     for item, occurrences in dictionary.items():
         percentage = (occurrences / total_occurrences) * 100
         percentages[item] = percentage
-
     return percentages
 
 nightmare_percentages = calculate_percentages(freq_of_symp_in_nightmare)
 master_percentages = calculate_percentages(freq_of_symp_master)
 
-#Nightmare patients suffer from higher rates of...
+#Find the diffeerence of rates between the two sets of patients
 def dict_diff(dict1, dict2):
     result = {}
     for key in dict1.keys():
@@ -113,4 +111,52 @@ def dict_diff(dict1, dict2):
 
 print(dict_diff(nightmare_percentages,master_percentages))
 
-#Nightmare patients suffer from higher rates of headaches and stomachaches
+#Is there any sort of relation between nightmares and the types of defense mechanisms people use?
+#We can repeat the code above on our columns about defense mechanisms
+
+unique_defenses = list(df_master['defense_mechanism'].unique())
+#We have 6 defense mechanisms that patients were surveyed for.
+print(df_master['defense_mechanism'].value_counts())
+#And compare this to our nightmare patients
+print(nightmare_patients['defense_mechanism'].value_counts())
+
+nightmare_defense_list = nightmare_patients['defense_mechanism'].tolist()
+master_defense_list = df_master['defense_mechanism']
+
+#Let's count the occurances of each symptom in the two sets of patients
+from collections import Counter
+def count_occurrences(items):
+    occurrences = Counter(items)
+    return dict(occurrences)
+
+print(count_occurrences(nightmare_defense_list))
+print(count_occurrences(master_defense_list))
+
+#Of the total 30 patients whose primary defense mechanism is denial, 29 of them are also sufferers of frequent nightmares
+
+#Let's plot the kind of defenses against number of nightmares each patient experiences in our total dataframe.
+
+grouped_data = df_master.groupby('defense_mechanism')['nightmare_frequency'].sum()
+
+plt.bar(grouped_data.index, grouped_data.values)
+plt.xlabel('defense_mechanism')
+plt.ylabel('nightmare_frequency')
+plt.title('Comparison of Defense Mechanisms and Nightmares')
+plt.show()
+
+#And let's do the same for our nightmare patient data
+grouped_data1 = nightmare_patients.groupby('defense_mechanism')['nightmare_frequency'].sum()
+
+plt.bar(grouped_data1.index, grouped_data1.values)
+plt.xlabel('defense_mechanism')
+plt.ylabel('nightmare_frequency')
+plt.title('Comparison of Defense Mechanisms and Nightmares')
+plt.show()
+
+'''
+Although our data shows a near-even split between all types of defenses (except repression),
+Our nightmare patients exhibit denial as their primary symptom.
+In psychoanalytic theory, denial would be the cause of a symptom type like high-nightmares,
+so we should switch our focus from nightmare patients to denial patients and look for causal factors for their denial.
+'''
+
