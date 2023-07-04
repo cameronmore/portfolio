@@ -160,3 +160,45 @@ In psychoanalytic theory, denial would be the cause of a symptom type like high-
 so we should switch our focus from nightmare patients to denial patients and look for causal factors for their denial.
 '''
 
+#Let's create an entirely new dataframe to investigate our denial patients.
+
+denial_patients = df_master[df_master['defense_mechanism']=='denial']
+print(denial_patients.head())
+
+#Let's collect some initial demographics
+for col in denial_patients:
+    print(denial_patients[col].value_counts())
+
+'''
+This is the demographic profile of our denial patients:
+
+Most are male, most are widowed, most have 4-5 siblings, most's parents are still together,
+Most were 10 or 11 when they experiences their first oedipal trauma, they dream 4 times per week,
+They have nightmares, their most common attachment style is avoidant,
+Their most common level of neurosis is 6 or 7, they have 10-11 slips per analytic session,
+They have a high or low level of percieved death drive (at 4 or 8)
+They experience headaches and stomachaches mostly, besides the nightmares
+And they have 1 or 3 symptoms at a time (usually)
+
+'''
+
+#Are the rates of these measures higher than the rest of the data?
+print('*************************')
+
+for col in df_master:
+    print(df_master[col].value_counts())
+
+'''
+
+It seems as though the only major difference is being widowed.
+In our denial patients:
+27 are widowed, 2 are divorced, and 1 is still married.
+In our total patients:
+single 61 are single, 31 are married, 30 are divorced, and 28 are widowed.
+
+We have a trifecta of measurement: denial patients are almost always wodowed and experience a high frequency of nightmares.
+
+Having found a demograph of interest, I will cease my exploratory data analysis here.
+
+'''
+
