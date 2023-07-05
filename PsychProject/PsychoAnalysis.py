@@ -155,7 +155,7 @@ plt.show()
 
 '''
 Although our data shows a near-even split between all types of defenses (except repression),
-Our nightmare patients exhibit denial as their primary symptom.
+Our nightmare patients exhibit denial as their primary defense.
 In psychoanalytic theory, denial would be the cause of a symptom type like high-nightmares,
 so we should switch our focus from nightmare patients to denial patients and look for causal factors for their denial.
 '''
@@ -170,6 +170,8 @@ for col in denial_patients:
     print(denial_patients[col].value_counts())
 
 '''
+Section A
+
 This is the demographic profile of our denial patients:
 
 Most are male, most are widowed, most have 4-5 siblings, most's parents are still together,
@@ -189,6 +191,7 @@ for col in df_master:
     print(df_master[col].value_counts())
 
 '''
+Section B
 
 It seems as though the only major difference is being widowed.
 In our denial patients:
@@ -202,3 +205,18 @@ Having found a demograph of interest, I will cease my exploratory data analysis 
 
 '''
 
+'''
+Addendum!!!
+#I want to look at the bifurcation of the denial/widow/nightmare patients according to their level of death drive (into 4 or 8)
+'''
+
+#Let's create a violin plot to see if it correlates with anything
+
+import seaborn as sns
+sns.violinplot(x=denial_patients["number_of_siblings"],y=denial_patients['level_of_perceived_death_drive'])
+
+'''
+Looking through my available measures, I don't see a factor that would differentiate the groups
+If there was, we would see a bifurcation in one of the factors described above in Section A
+There may be some factor that contibutes to the bifurcation that was not surveyed for
+'''
