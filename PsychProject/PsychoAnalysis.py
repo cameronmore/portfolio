@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 ##1. Merge the two datasets
 
@@ -11,10 +12,10 @@ df2 = pd.read_csv('AlterPsychData.csv', usecols=['id','level_of_neurosis','numbe
 df_master = pd.merge(df1,df2, how='left',on='id')
 
 #Find any initial visual correlation
-df_master.plot(x='number_of_freudian_slips_per_analytic_session',y='level_of_neurosis')
-df_master.boxplot('nightmare_frequency')
+#df_master.plot(x='number_of_freudian_slips_per_analytic_session',y='level_of_neurosis')
+#df_master.boxplot('nightmare_frequency')
 
-#Now that we see there are a number of nigh-nigtmare patients, let's investigate further
+#Now that we see there are a number of nightmare patients, let's investigate further
 
 #Let's separate out our categories of interest into two dataframes, which are nightmare patients and high-neurosis patients
 nightmare_patients = df_master[df_master['nightmare_frequency']>2]
@@ -28,8 +29,6 @@ print(len(nightmare_patients))
 high_neurosis_patients = df_master[df_master['level_of_neurosis']>8]
 high_neurosis_patients.head(5)
 print(len(high_neurosis_patients))
-
-#It looks like we have 30 high-neurosis patients and 30 nightmare-suffering patients
 
 #Let's see if nightmare patients have a higher average level of neurosis than the entire set of patients
 
@@ -71,8 +70,8 @@ print(freq_of_symp_in_nightmare)
 
 #Plotting the frequency
 # Create a pie chart
-plt.pie(freq_of_symp_in_nightmare.values(), labels=freq_of_symp_in_nightmare.keys())
-plt.show()
+#plt.pie(freq_of_symp_in_nightmare.values(), labels=freq_of_symp_in_nightmare.keys())
+#plt.show()
 
 #It looks like our nightmare patients suffer from headaches and stomachaches the most.
 #Is this higher than average?
@@ -137,12 +136,13 @@ print(count_occurrences(master_defense_list))
 #Let's plot the kind of defenses against number of nightmares each patient experiences in our total dataframe.
 
 grouped_data = df_master.groupby('defense_mechanism')['nightmare_frequency'].sum()
-
+'''
 plt.bar(grouped_data.index, grouped_data.values)
 plt.xlabel('defense_mechanism')
 plt.ylabel('nightmare_frequency')
 plt.title('Comparison of Defense Mechanisms and Nightmares')
 plt.show()
+
 
 #And let's do the same for our nightmare patient data
 grouped_data1 = nightmare_patients.groupby('defense_mechanism')['nightmare_frequency'].sum()
@@ -153,7 +153,7 @@ plt.ylabel('nightmare_frequency')
 plt.title('Comparison of Defense Mechanisms and Nightmares')
 plt.show()
 
-'''
+
 Although our data shows a near-even split between all types of defenses (except repression),
 Our nightmare patients exhibit denial as their primary defense.
 In psychoanalytic theory, denial would be the cause of a symptom type like high-nightmares,
@@ -207,16 +207,29 @@ Having found a demograph of interest, I will cease my exploratory data analysis 
 
 '''
 Addendum!!!
-#I want to look at the bifurcation of the denial/widow/nightmare patients according to their level of death drive (into 4 or 8)
+I want to look at the bifurcation of the denial/widow/nightmare patients according to their level of death drive (into 4 or 8)
 '''
 
 #Let's create a violin plot to see if it correlates with anything
 
-import seaborn as sns
-sns.violinplot(x=denial_patients["number_of_siblings"],y=denial_patients['level_of_perceived_death_drive'])
+#sns.violinplot(x=denial_patients["number_of_siblings"],y=denial_patients['level_of_perceived_death_drive'])
 
 '''
 Looking through my available measures, I don't see a factor that would differentiate the groups
 If there was, we would see a bifurcation in one of the factors described above in Section A
 There may be some factor that contibutes to the bifurcation that was not surveyed for
 '''
+
+#Creating nicer plots
+
+#sns.scatterplot(data=df_master, x='age',y='level_of_neurosis')
+#sns.stripplot(data=df_master,x='nightmare_frequency',y='defense_mechanism',hue='gender',legend='auto')
+#sns.scatterplot(data=denial_patients,x='age',y='level_of_neurosis',hue='gender')
+#sns.boxplot(data=df_master,x='defense_mechanism',y='nightmare_frequency')
+#sns.swarmplot(data=df_master, x="nightmare_frequency")
+#sns.stripplot(data=df_master,x='nightmare_frequency',y='number_of_freudian_slips_per_analytic_session',hue='defense_mechanism',legend='auto')
+#sns.violinplot(x=denial_patients["level_of_perceived_death_drive"])
+
+#Display the legen outside the graph
+plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0)
+
