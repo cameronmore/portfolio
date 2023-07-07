@@ -10,7 +10,7 @@ I began by prompting Google's Bard with creating a fictional dataset of 150 psyc
 
 ### 1. PsychoAnalysis.py
 
-This is the core data analytic file where I used various libraries to find patterns in the dataset.
+This is the core data analytic file where I used various Python libraries to find patterns in the dataset.
 
 ### 2. PsychData.csv and AlterPsychData.csv
 
