@@ -18,7 +18,7 @@ These are two files containing 150 lines of patient data each. After getting the
 
 ### 3. Psy_Core.ttl
 
-This is my core ontology that models the data. It's build out of the Mental Functioning Ontology (MFO) and its extension, the Mental Disease Ontology (MD). Soon, I will add portions from the Symptom Ontology and the Information Entity Ontology to capture more terms from the data.
+This is my core ontology that models the data. It's built out of the Mental Functioning Ontology (MFO) with its extension, the Mental Disease Ontology (MD), and the Symptom Ontology. Soon, I will add portions from the Common Core Ontologies (especially the Information Entity Ontology) to capture more terms from the data.
 
 ### 4. Psychoanalytic_Ontology_Project.pdf
 
