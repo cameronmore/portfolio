@@ -4,7 +4,7 @@ Welcome to my portfolio! I am an ontology developer and recently received a Mast
 
 In this repository, you can find projects I have built to demonstrate my skills with Python, Protege, and other data/ontology development tools. My other repositories include my work on the STEM Identity Ontology (STEMIO), the Mental Functioning Ontology (MFO), and an Unconscious Extension of MFO. Below, I describe the files that can be found in this personal portfolio.
 
-My current project is manipulating some AI generated data about psychoanalytic patients, described below and found in the folder 'PsychProject'. I'm also learning how to integrate machine learning models with ontologies to allow the mass organization/integration of data. The first step is to become familiar with PyTorch, so stay tuned for some files coming soon!
+My current project is manipulating some AI generated data about psychoanalytic patients, described below and found in the folder 'PsychProject'.
 
 ## File Guide
 
@@ -33,18 +33,21 @@ The Zebra Puzzle is a logical puzzle, supposedly invented by Albert Einstein. Fr
 14. The Norwegian lives next to the Blue house.
 ```
 
-### 3. Unconscious Extension of the Mental Functioning Ontology (Ontology Engineering)
+### 3. Neural Network Linear Regression (PyTorch)
+
+Although there are much better tools out there to generate linear regression algorithms, I tried my hand at making one using PyTorch.
+
+### 4. Unconscious Extension of the Mental Functioning Ontology (Ontology Engineering)
 
 I have attached a copy of a paper that outlines the current goals and deliverables that an unconscious extension of the mental functioning ontology can achieve.
 
-### 4. Soccer Visualization (Data Visualization)
+### 5. Soccer Visualization (Data Visualization)
 
 As a part of a UDemy course I am taking to learn Python, I did some simple visualization of data from the soccer video game Fifa. I found the most undervalues player by taking the players' value and subtracting it from their wages, which involved turning those two columns into integers. I then plotted it on a graph. I have attached the dataset in this portfolio.
 
 ### 5. Iris Machine Learning (Simple SciKit-learn Algorithm)
 
 A small project I did while taking a Python UDemy course; a simple species prediction algorithm with the Iris dataset.
-
 
 ### 6. Wyrdl! (Python)
 
