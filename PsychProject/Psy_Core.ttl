@@ -3451,9 +3451,24 @@ obo:SYMP_0020045 rdf:type owl:Class ;
                  rdfs:label "balance symptom"@en .
 
 
+###  http://purl.obolibrary.org/obo/MF_0000020#Age_at_Oedipal_Trauma
+<http://purl.obolibrary.org/obo/MF_0000020#Age_at_Oedipal_Trauma> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Psychoanalytic_Measurement> .
+
+
+###  http://purl.obolibrary.org/obo/MF_0000020#Anxious_Attachment
+<http://purl.obolibrary.org/obo/MF_0000020#Anxious_Attachment> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Attachment_Style> .
+
+
 ###  http://purl.obolibrary.org/obo/MF_0000020#Attachment_Style
 <http://purl.obolibrary.org/obo/MF_0000020#Attachment_Style> rdf:type owl:Class ;
                                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Human_Health_Measurement> .
+
+
+###  http://purl.obolibrary.org/obo/MF_0000020#Avoidant_Attachment
+<http://purl.obolibrary.org/obo/MF_0000020#Avoidant_Attachment> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Attachment_Style> .
 
 
 ###  http://purl.obolibrary.org/obo/MF_0000020#Frequency_of_Dreams
@@ -3469,6 +3484,11 @@ obo:SYMP_0020045 rdf:type owl:Class ;
 ###  http://purl.obolibrary.org/obo/MF_0000020#Frequency_of_Nightmares
 <http://purl.obolibrary.org/obo/MF_0000020#Frequency_of_Nightmares> rdf:type owl:Class ;
                                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Psychoanalytic_Measurement> .
+
+
+###  http://purl.obolibrary.org/obo/MF_0000020#Gender_Identification
+<http://purl.obolibrary.org/obo/MF_0000020#Gender_Identification> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Human_Health_Measurement> .
 
 
 ###  http://purl.obolibrary.org/obo/MF_0000020#Health_Measurement_Information_Content_Entity
@@ -3491,6 +3511,22 @@ obo:SYMP_0020045 rdf:type owl:Class ;
                                                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Psychoanalytic_Measurement> .
 
 
+###  http://purl.obolibrary.org/obo/MF_0000020#Man
+<http://purl.obolibrary.org/obo/MF_0000020#Man> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Gender_Identification> .
+
+
+###  http://purl.obolibrary.org/obo/MF_0000020#Marital_Status
+<http://purl.obolibrary.org/obo/MF_0000020#Marital_Status> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Human_Health_Measurement> ;
+                                                           cco:definition "A measurement of a person's marital status" .
+
+
+###  http://purl.obolibrary.org/obo/MF_0000020#Married
+<http://purl.obolibrary.org/obo/MF_0000020#Married> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Marital_Status> .
+
+
 ###  http://purl.obolibrary.org/obo/MF_0000020#Number_of_Siblings
 <http://purl.obolibrary.org/obo/MF_0000020#Number_of_Siblings> rdf:type owl:Class ;
                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Human_Health_Measurement> .
@@ -3501,14 +3537,40 @@ obo:SYMP_0020045 rdf:type owl:Class ;
                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Human_Health_Measurement> .
 
 
+###  http://purl.obolibrary.org/obo/MF_0000020#Parental_Marital_Status
+<http://purl.obolibrary.org/obo/MF_0000020#Parental_Marital_Status> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Marital_Status> ;
+                                                                    cco:definition "The matiral status of a person's parents." .
+
+
 ###  http://purl.obolibrary.org/obo/MF_0000020#Psychoanalytic_Measurement
 <http://purl.obolibrary.org/obo/MF_0000020#Psychoanalytic_Measurement> rdf:type owl:Class ;
                                                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Human_Health_Measurement> .
 
 
+###  http://purl.obolibrary.org/obo/MF_0000020#Secure_Attachment
+<http://purl.obolibrary.org/obo/MF_0000020#Secure_Attachment> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Attachment_Style> .
+
+
 ###  http://purl.obolibrary.org/obo/MF_0000020#Type_of_Symptom
 <http://purl.obolibrary.org/obo/MF_0000020#Type_of_Symptom> rdf:type owl:Class ;
                                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Human_Health_Measurement> .
+
+
+###  http://purl.obolibrary.org/obo/MF_0000020#Unmarried
+<http://purl.obolibrary.org/obo/MF_0000020#Unmarried> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Marital_Status> .
+
+
+###  http://purl.obolibrary.org/obo/MF_0000020#Widowed
+<http://purl.obolibrary.org/obo/MF_0000020#Widowed> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Marital_Status> .
+
+
+###  http://purl.obolibrary.org/obo/MF_0000020#Woman
+<http://purl.obolibrary.org/obo/MF_0000020#Woman> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/MF_0000020#Gender_Identification> .
 
 
 ###  http://purl.obolibrary.org/obo/MF_0000020#intellectualization
