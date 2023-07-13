@@ -23,3 +23,7 @@ This is my core ontology that models the data. It's built out of the Mental Func
 ### 4. Psychoanalytic_Ontology_Project.pdf
 
 This document outlines the steps I tool while analyzing the data, curating an ontology to model it, crafting SHACL shapes and SPARQL queries, and my thought process along the way.
+
+### 5. DataIngestion.ipynb
+
+Using RDFLib to ingest patient data into the ontology.
