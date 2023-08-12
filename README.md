@@ -16,7 +16,11 @@ In my latest project, I am developing an ontology for a set of ficticious data g
 
 I'm currently working on a tool that takes instance data and prompts the user for necessary object properties that instances of each class should have. For example, if my ontology says that every instance of 'person' needs 'has_height,' then the script will prompt the user to input the information. This is a work in progress.
 
-### 3. Zebra Puzzle (Protege and Owl)
+### 3. ROBOT GUI
+
+I created a simple graphical user interface for using ROBOT, the command line ontology tool. Currently, it's just a command line interface, but I'm working on making it ROBOT specific--making a drop down menu for different commands and adding a browse option to give it files to run commands on.
+
+### 4. Zebra Puzzle (Protege and Owl)
 
 The Zebra Puzzle is a logical puzzle, supposedly invented by Albert Einstein. From a series of clues, one is able to infer the location of a zebra among five distinctly colored houses. Each house has its own occupant, pet, cigarette brand, and drink. To solve the puzzle, I built an ontology that describes the classes of things (occupants, houses, colors, etc), and asserted the relationships between the classes (all occupants occupy houses) and the particular relations (the clues below). By running a reasoner on the ontology, we can infer the location of the zebra. The Owl file can be found in this repo. I have listed the clues below:
 
@@ -37,22 +41,22 @@ The Zebra Puzzle is a logical puzzle, supposedly invented by Albert Einstein. Fr
 14. The Norwegian lives next to the Blue house.
 ```
 
-### 4. Neural Network Linear Regression (PyTorch)
+### 5. Neural Network Linear Regression (PyTorch)
 
 Although there are much better tools out there to generate linear regression algorithms, I tried my hand at making one using PyTorch.
 
-### 5. Unconscious Extension of the Mental Functioning Ontology (Ontology Engineering)
+### 6. Unconscious Extension of the Mental Functioning Ontology (Ontology Engineering)
 
 I have attached a copy of a paper that outlines a possible extension project for the Mental Functioning Ontology that captures unconscious data and returns disease-course models and up-to-date research articles for queries.
 
-### 6. Soccer Visualization (Data Visualization)
+### 7. Soccer Visualization (Data Visualization)
 
 As a part of a UDemy course I took to learn Python a few months ago, I did some simple visualization of data from the soccer video game Fifa. I found the most undervalues player by taking the players' value and subtracting it from their wages, which involved turning those two columns into integers. I then plotted it on a graph. I have attached the dataset in this portfolio.
 
-### 5. Iris Machine Learning (Simple SciKit-learn Algorithm)
+### 8. Iris Machine Learning (Simple SciKit-learn Algorithm)
 
 A small project I did while taking a Python UDemy course; a simple species prediction algorithm with the Iris dataset.
 
-### 6. Wyrdl! (Python)
+### 9. Wyrdl! (Python)
 
 I wrote a simple Python Wordle copy.
