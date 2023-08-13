@@ -18,7 +18,7 @@ I'm currently working on a tool that takes instance data and prompts the user fo
 
 ### 3. ROBOT GUI
 
-I created a simple graphical user interface for using ROBOT, the command line ontology tool. Currently, it's just a command line interface, but I'm working on making it ROBOT specific--making a drop down menu for different commands and adding a browse option to give it files to run commands on.
+I created a simple graphical user interface for using ROBOT, the command line ontology tool. It has a few commands hard-coded, so people who only need one or two commands can use it and avoid having to work at the command line. It relies of PySimpleGUI, and I will be adding more hard-coded ROBOT command options.
 
 ### 4. Zebra Puzzle (Protege and Owl)
 
