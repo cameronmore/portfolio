@@ -1,6 +1,11 @@
 import PySimpleGUI as sg
 import subprocess
 
+#sg.theme('DarkGrey5')
+
+sg.popup_ok('Welcome to SimpleROBOT! Here, you can run simple SPARQL SELECT queries, SPARQL files with multiple queries to quality control an ontology, or \'help\' to see everything ROBOT has to offer (when used at the command line)',title='Welcome!')
+
+
 # Define the GUI layout
 layout = [
     [sg.Text('Choose a command'),sg.DropDown(values=['query','verify', 'help'],key='command')],
@@ -23,9 +28,12 @@ while True:
 
     if event == "Run":
         if values['command']=='query':
-            command='robot query --input ' + values['ontology_browse'] + ' --query ' + values['query_browse']
+            command='robot query --input ' + values['ontology_browse'] + ' --query  ' + values['query_browse'] + '  ' + values['results_loc']
+            command = command.replace('/','\\')
         elif values['command']=='help':
             command = 'robot help'
+        elif values['command']=='verify':
+            command='robot verify --input '+ values['ontology_browse'] + ' --queries ' + values['query_browse'] + values['results_loc']
         #Hard code more robot commands here
 
 
