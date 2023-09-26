@@ -41,7 +41,7 @@ The Zebra Puzzle is a logical puzzle, supposedly invented by Albert Einstein. Fr
 
 ### 5. Neural Network Linear Regression (PyTorch)
 
-Although there are much better tools out there to generate linear regression algorithms, I tried my hand at making one using PyTorch.
+Although there are much better functions out there to generate linear regression algorithms, I tried my hand at making one using PyTorch.
 
 ### 6. Unconscious Extension of the Mental Functioning Ontology (Ontology Engineering)
 
