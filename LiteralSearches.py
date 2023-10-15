@@ -1,10 +1,10 @@
-from rdflib import Graph, Literal
+from rdflib import Graph, Literal, URIRef
 import re
 
 g = Graph()
 
-#Your ontology goes here
-g.parse("BasicFormalOntology.ttl")
+#Using Basic Formal Ontology as an example
+graph =g.parse("BasicFormalOntology.ttl")
 
 
 def get_elucidations():
@@ -37,4 +37,34 @@ def get_definitions():
     for row in results:
         definitions = [str(row[0]) for row in results]
         print(definitions)
+
+
+def replace_iri(old_iri: str, new_iri: str) -> Graph:
+    '''
+    Returns a graph with the iri replaced, stored in memory, not serialized. Note, takes full iri string, no prefixes.
+    '''
+    old_iri = URIRef(old_iri)
+    new_iri = URIRef(new_iri)
+    
+    for s, p, o in graph.triples((None, None, None)):
+        if s == old_iri:
+            graph.remove((s, p, o))
+            graph.add((new_iri, p, o))
+        if p == old_iri:
+            graph.remove((s, p, o))
+            graph.add((s, new_iri, o))
+        if o == old_iri:
+            graph.remove((s, p, o))
+            graph.add((s, p, new_iri))
+    
+    return graph
+
+
+#Example Calls:
+#replace_iri("http://www.w3.org/2000/01/rdf-schema#label","http://www.w3.org/2004/02/skos/core#prefLabel")
+#g.serialize("bfo_label_replaced.ttl")
+#get_definitions()
+#get_elucidations
+
+
 
