@@ -7,9 +7,9 @@ g = Graph()
 graph =g.parse("BasicFormalOntology.ttl")
 
 
-def get_elucidations():
+def get_elucidations() -> list:
     '''
-    Returns a list of strings where the string contains the word 'elucidation'
+    Returns a list of strings where the string contains the word 'elucidation'. Note, this will return labels with the word 'elucidation'
     '''
     literals = [str(lit) for lit in g.objects() if isinstance(lit, Literal)]
     elucidations=[]
@@ -19,7 +19,7 @@ def get_elucidations():
             elucidations.append(item)
             print(elucidations)
 
-def get_definitions():
+def get_definitions() -> list:
     '''
     Returns a list of strings where the string is the value of cco:definition or skos:definition
     '''
@@ -37,7 +37,6 @@ def get_definitions():
     for row in results:
         definitions = [str(row[0]) for row in results]
         print(definitions)
-
 
 def replace_iri(old_iri: str, new_iri: str) -> Graph:
     '''
