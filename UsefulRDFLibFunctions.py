@@ -55,11 +55,44 @@ def replace_iri(old_iri: str, new_iri: str) -> Graph:
         if o == old_iri:
             graph.remove((s, p, o))
             graph.add((s, p, new_iri))
-    
     return graph
 
 
+def check_if_label_matches_iri() -> list:
+    """
+    Relies on the Python module 're' so make sure 'import re' is asserted.    
+    Checks if the rdfs:label for a class is the same as the end of the IRI.
+    This function parses whatever ontology is already parsed in graph = g.parse("YOUR_ONTOLOGY.ttl") .
+    """
+    #Define the query
+    q ="""
+    SELECT ?c ?d
+    WHERE { 
+    ?c rdf:type owl:Class ;
+        rdfs:label ?d .
+        FILTER (!isBlank(?c)) 
+    }"""
+    #Execute the query
+    qres = g.query(q)
+    unnormalized_iris = []
+    for row in qres:
+        full_iri = row[0]
+        label_string = (str(row[1])).replace(" ","")
+        normalized_label_string = (re.sub("[^a-zA-Z]+", "", label_string)).upper()
+        label_length=len(label_string)
+        full_iri_as_string = str(row[0])
+        end_of_iri = full_iri_as_string[-int(label_length):]
+        normalized_end_of_iri = (re.sub("[^a-zA-Z]+", "", end_of_iri)).upper()
+        if normalized_end_of_iri != normalized_label_string:
+            unnormalized_iris.append(full_iri_as_string)
+    print(unnormalized_iris)
+
+
+
+
+
 #Example Calls:
+#check_if_label_matches_iri()
 #replace_iri("http://www.w3.org/2000/01/rdf-schema#label","http://www.w3.org/2004/02/skos/core#prefLabel")
 #g.serialize("bfo_label_replaced.ttl")
 #get_definitions()
