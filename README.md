@@ -1,6 +1,6 @@
 # Portfolio
 
-Welcome to my portfolio! I am an ontologist working for SAIC, focused on BFO-CCO ontologies. I received a Master's degree from the University at Buffalo in spring 2023, where I studied the philosophy of applied ontology with Dr. Barry Smith and Dr. John Beverly.
+Welcome to my portfolio! I am an ontologist working for CUBRC Inc, developing BFO-CCO ontologies. I received a Master's degree from the University at Buffalo in spring 2023, where I studied the philosophy of applied ontology with Dr. Barry Smith and Dr. John Beverly.
 
 In this repository, you can find projects I have built to demonstrate my skills with Python, Protege, SHACL, SPARQL, and other data/ontology development tools. My other repositories include my work on the extensions to the CCO [Common Core Extensions](https://github.com/cameronmore/CCOExtensions), the Mental Functioning Ontology (MFO), and a Psychoanalysis Data Project. Below, I describe the files that can be found in this personal portfolio.
 
