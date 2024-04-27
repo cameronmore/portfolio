@@ -88,6 +88,50 @@ def check_if_label_matches_iri() -> list:
     print(unnormalized_iris)
 
 
+def check_if_curation_annotation_matches_ontology() -> list:
+    """
+    Relies on the Python module 're' so make sure 'import re' is asserted.    
+    Checks if the cco:is_curated_in_ontology annotation of a term matches the ontology IRI of the file that the term is in.
+    This function parses whatever ontology is already parsed in graph = g.parse("YOUR_ONTOLOGY.ttl") .
+    """
+    #Grab the curation annotation
+    q1 ="""
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    SELECT ?onto
+    WHERE { 
+    ?onto rdf:type owl:Ontology .
+    }"""
+    #Execute the query
+    qres1 = g.query(q1)
+    ontology_iri = []
+    for row in qres1:
+        ontology_iri.append(str(row[0]))
+    if len(ontology_iri)>1:
+        print("Error: more that one ontology IRI returned")
+        return
+    
+    #Return the terms with a curation annotation
+    q2 ="""
+    PREFIX cco: <http://www.ontologyrepository.com/CommonCoreOntologies/>
+    SELECT ?c ?o
+    WHERE { 
+    ?c cco:is_curated_in_ontology ?o .
+    }"""
+
+    #Turn ontology IRI into string
+    ontology_iri_string = str(ontology_iri[0])
+    
+    #Create error list and query ontology
+    incorrect_curation_annotation =[]
+    qres2 = g.query(q2)
+    
+    #Append error list if curation annotation does not match
+    for row in qres2:
+        if str(row[1]) != ontology_iri_string:
+            incorrect_curation_annotation.append(str(row[0]))
+    print(incorrect_curation_annotation)
+
+
 
 
 
@@ -97,6 +141,7 @@ def check_if_label_matches_iri() -> list:
 #g.serialize("bfo_label_replaced.ttl")
 #get_definitions()
 #get_elucidations
+#check_if_curation_annotation_matches_ontology()
 
 
 
